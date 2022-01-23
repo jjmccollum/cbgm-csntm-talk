@@ -1,0 +1,39 @@
+digraph witness {
+	layout=neato;
+	1[shape=none, margin=0, label=<
+		<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+			<TR>
+				<TD BORDER="0"></TD>
+				<TD>3Jo 1:1/2</TD>
+				<TD>3Jo 1:1/6</TD>
+				<TD>3Jo 1:1/8</TD>
+				<TD BORDER="0">···</TD>
+				<TD>3Jo 1:15/23</TD>
+			</TR>
+			<TR>
+				<TD>GA 69</TD>
+				<TD>a</TD>
+				<TD>af1</TD>
+				<TD>a</TD>
+				<TD BORDER="0">···</TD>
+				<TD>a</TD>
+			</TR>
+			<TR>
+				<TD>GA 1739</TD>
+				<TD>a</TD>
+				<TD>a</TD>
+				<TD>b</TD>
+				<TD BORDER="0">···</TD>
+				<TD>a</TD>
+			</TR>
+			<TR>
+				<TD>GA 2243</TD>
+				<TD>b</TD>
+				<TD>a</TD>
+				<TD>a</TD>
+				<TD BORDER="0">···</TD>
+				<TD>a</TD>
+			</TR>
+		</TABLE>
+	>, pos="0,0!"];
+}

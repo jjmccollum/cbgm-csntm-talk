@@ -1,0 +1,8 @@
+digraph transitivity_cost {
+	a [label="a", shape=plaintext];
+	b [label="b", shape=plaintext];
+	c [label="c", shape=plaintext];
+	a -> b[label="1"];
+	b -> c[label="1"];
+	a -> c[style=dashed, label=" 2"];
+}

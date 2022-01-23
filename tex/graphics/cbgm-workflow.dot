@@ -1,0 +1,19 @@
+digraph workflow {
+	margin=0;
+	node [shape=rectangle];
+	initial_judgments [label="Initial (incomplete)\lassessment of evidence\l"];
+	local_stemmata [label="Judgments of readings\lat local stemmata\l"];
+	witnesses [label="Calculate relationships\lbetween witnesses\l"];
+	textual_flow [label="Evaluate judgments\lon readings\lusing general tendencies\lof textual flow\l"];
+	substemmata [label="Find optimal witness substemmata\lbased on relationships\land knowledge of documents\l"];
+	global_stemma [label="Global stemma\lrepresenting rough history\lof textual development\l"];
+	edge[splines=line];
+	initial_judgments -> local_stemmata;
+	edge[splines=curved];
+	local_stemmata -> witnesses;
+	witnesses -> textual_flow;
+	textual_flow -> local_stemmata;
+	edge[splines=line];
+	witnesses -> substemmata;
+	substemmata -> global_stemma;
+}

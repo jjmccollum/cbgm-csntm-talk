@@ -1,0 +1,581 @@
+\documentclass[10pt]{beamer}
+\usepackage{../sty/cbgm-csntm-talk}
+\title{CBGM Q\&A @ CSNTM}
+\author{Joey McCollum\inst{*}}
+\institute{\inst{*}Virginia Polytechnic Institute and State University\\ \faEnvelope\quad\href{mailto:jjmccollum@vt.edu}{jjmccollum@vt.edu}\\ \faTwitter\quad @jamesjmccollum\\ \faGithub\quad\href{https://github.com/jjmccollum}{jjmccollum}\\ Note: A more formal introduction to the CBGM (also written by me) is available for free at\\ \url{https://vt.academia.edu/JoeyMcCollum}.}
+\date{31 January 2022}
+\begin{document}
+	\begin{frame}
+		\titlepage		
+		\phantom{\cite{McCollum19}\cite{McCollum20-1}\cite{McCollum20-2}\cite{McCollum21}\cite{Swanson.Luke}}%Hide initial full-text citations here
+	\end{frame}
+	\begin{frame}{About Me}
+		\begin{itemize}
+			\item Research Associate at VT (for a few more days)
+			\item Soon: PhD candidate at ACU (supervisor: Stephen Carlson)
+			\item Publications/talks in \emph{AUSS}, \emph{FilNeot}, \emph{TC}, \emph{SBL} (see bibliography)
+			\item PS guest talk: \url{https://www.youtube.com/watch?v=vbUnZZxww-o}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.3\textwidth]{../graphics/max-and-moritz-in-biblical-greek.png}
+			\quad
+			\includegraphics[width=0.35\textwidth]{../graphics/the-tale-of-peter-rabbit-in-koine-greek.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}{Choose Your Own Adventure}\label{slide:crossroad}
+		\begin{table}
+			\centering
+			\small
+			\begin{tabular}{l}
+				\hyperlink{slide:about}{About the CBGM}\\
+				\hyperlink{slide:collation}{Collation}\\
+				\hyperlink{slide:local-stemma}{The Local Stemma}\\
+				\hyperlink{slide:witnesses}{Witnesses}\\
+				\hyperlink{slide:genealogical-relationships}{Genealogical Relationships between Witnesses}\\
+				\hyperlink{slide:potential-ancestors}{Potential Ancestors}\\
+				\hyperlink{slide:textual-flow-unit}{Textual Flow at a Variation Unit}\\
+				\hyperlink{slide:textual-flow-reading}{Textual Flow for a Variant Reading}\\
+				\hyperlink{slide:explained-readings}{``Explained'' Readings}\\
+				\hyperlink{slide:substemma}{The Substemma(ta) of a Witness}\\
+				\hyperlink{slide:substemma-search}{Finding a (Good) Substemma}\\
+				\hyperlink{slide:global-stemma}{The Global Stemma}\\
+				\hyperlink{slide:criticisms}{Criticisms and Idiosyncrasies}\\
+				\hyperlink{slide:making-it-digital}{Making It Digital}\\
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	\begin{frame}{About the CBGM}\label{slide:about}
+		\begin{itemize}
+			\item Developed over thirty years by Gerd Mink, culminating in the latest updates to the \emph{Editio Critica Maior} (\emph{ECM})
+			\item Important reading:
+			\begin{itemize} 
+				\item \cite{Mink04}
+				\item \cite{Gurry17}
+				\item \cite{WG17}
+				\item \cite{Edmondson19}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{About the CBGM}
+		\begin{itemize}
+			\item \emph{Not} a way to make computers do textual criticism, but a way for them to help us refine our judgments
+			\item \emph{Not} a new methodology for evaluating variant readings, but a ``meta-approach'' to be used on top of existing methods
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{About the CBGM}
+		\begin{itemize}
+			\item Intended to solve \emph{contamination}, or mixture across branches of the textual tradition
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.5]{../graphics/stemma-contamination.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{About the CBGM}
+		\begin{itemize}
+			\item Methodological assumptions:
+			\begin{enumerate}
+				\item Scribes typically copied their exemplars with fidelity.
+				\item If a scribe introduced a variant, then it came from some other reading.
+				\item Scribes typically used fewer sources rather than many.
+				\item Scribes typically used closely related sources rather than distant ones.
+			\end{enumerate}
+		\end{itemize}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Collation}\label{slide:collation}
+		\begin{itemize}
+			\item To compare manuscripts' texts, we must first align them at independent \emph{variation units}
+			\item \emph{Variant readings} occur at variation units
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{../graphics/swanson-luke-10-2-variation-units.pdf}
+		\end{center}
+		\footnotesize\parencite[Source:][183]{Swanson.Luke}
+	\end{frame}
+	\begin{frame}{Collation}
+		\begin{itemize}
+			\item Variation units serve as our points of comparison between any two texts in the CBGM
+			\item Think of them as the columns of a table and the witnesses as rows
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.5]{../graphics/witnesses.pdf}
+		\end{center}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Local Stemma}\label{slide:local-stemma}
+		\begin{itemize}
+			\item The basic unit of comparison
+			\item One for each variation unit
+			\item A graphical representation of our judgments of readings
+		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.5]{../graphics/B25K1V1U2-local-stemma.pdf}
+				\end{center}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.5]{../graphics/B25K1V2U18-local-stemma.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{The Local Stemma}
+		\begin{itemize}
+			\item Some are more complicated
+			\begin{itemize}
+				\item \emph{defective} readings (e.g., obvious misspellings)
+				\item \emph{orthographic} readings (e.g., regional differences)
+				\item \emph{split} attestations of the same reading (coincidental agreement)
+				\item \emph{ambiguous} readings
+			\end{itemize}
+			\item Some of these may be collapsed with other substantive readings
+			\begin{center}
+				\includegraphics[scale=0.5]{../graphics/B25K1V4U22-26-local-stemma-ignore-defective-ignore-ambiguous-merge-splits.pdf}
+			\end{center}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Witnesses}\label{slide:witnesses}
+		\begin{itemize}
+			\item For the CBGM's purposes, a \emph{witness} is a sequence of readings
+			\item Typically, the \emph{text} of a known manuscript, minus the material baggage (date, provenance, etc.)
+			\begin{itemize}
+				\item ``How texts relate'' $\neq$ ``How manuscripts relate''
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.5]{../graphics/witnesses.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Witnesses}
+		\begin{itemize}
+			\item Versions and fathers can also be treated as witnesses
+			\item But back-translation may be ambiguous, and patristic citations may be ``lacunose''
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.5]{../graphics/B25K1V1U2-local-stemma-versions-fathers.pdf}
+		\end{center}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Genealogical Relationships between Witnesses}\label{slide:genealogical-relationships}
+		\begin{itemize}
+			\item The relationship of two witnesses is the overall pattern \emph{of the relationships of their readings} at all variation units where both are extant
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/genealogical-relationships.pdf}
+		\end{center}
+		\begin{itemize}
+			\item The first three are the most important
+		\end{itemize}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Potential Ancestors}\label{slide:potential-ancestors}
+		\begin{itemize}
+			\item Potential ancestor = ``more prior than posterior readings''
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.3333]{../graphics/potential-ancestors.pdf}
+		\end{center}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Textual Flow at a Variation Unit}\label{slide:textual-flow-unit}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item \emph{Textual flow} is a useful tool for helping us revise our judgments in a local stemma
+					\item \emph{Not} a global stemma (our ultimate goal), but still important
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-incomplete.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-textual-flow.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Textual Flow at a Variation Unit}
+		\begin{itemize}
+			\item How do we find a given witness's \emph{textual flow ancestor}?
+			\item We specify a \emph{connectivity limit} $\kappa$ (i.e., a radius of ``close-enough'' neighbors)
+			\item Then, for each witness:
+			\begin{enumerate}
+				\item List its potential ancestors, sorted from most agreement to least
+				\item If one of the first $\kappa$ has the same reading at this unit, then select it
+				\item If not, then choose the first (non-lacunose) potential ancestor
+			\end{enumerate}
+			\item Core idea: use \emph{general relationships} (between witnesses) to find \emph{specific relationships} (between readings in a local stemma)
+		\end{itemize}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}\label{slide:textual-flow-reading}
+		\begin{itemize}
+			\item Often, we just want to know the textual flow for witnesses with a specific reading
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26Ra-coherence-attestations.pdf}
+		\end{center}
+		\begin{itemize}
+			\item (Numbers on edges represent the rank of the closest potential ancestor with the same reading, if it's not 1)
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}
+		\begin{itemize}
+			\item We can use it to evaluate alternate hypotheses about the initial text (A)
+		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-incomplete.pdf}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-b-initial.pdf}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26Ra-coherence-attestations-b-initial.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item Or, we can look only at the parts of textual flow where a reading gets changed to find the most likely sources of unexplained readings (\emph{e} and \emph{f})
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-incomplete.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{../graphics/B25K1V13U24-26-coherence-variants-strengths.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Textual Flow for a Variant Reading}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item Using this information, we can attempt to explain previous unexplained readings
+					\item A necessary step for our ultimate goal of constructing a global stemma
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-complete.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{``Explained'' Readings}\label{slide:explained-readings}
+		\begin{itemize}
+			\item We say that one reading \emph{explains} another if
+			\begin{itemize}
+				\item it is the same reading (explanation by agreement), or
+				\item there is an edge in the local stemma from it to the other reading
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/explained-readings.pdf}
+		\end{center}
+		\begin{itemize}
+			\item Lacunae do not have to be explained, and they cannot explain readings
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{``Explained'' Readings}
+		\begin{columns}
+			\begin{column}{0.4\textwidth}
+				\centering
+				\includegraphics[width=0.75\textwidth]{../graphics/intermediary-node-example.pdf}
+			\end{column}
+			\begin{column}{0.55\textwidth}
+				\begin{itemize}
+					\item Does a reading explain any of its posterior readings transitively (i.e., in the local stemma to the left, does \emph{a} explain \emph{c})?
+					\item As originally formulated, \emph{no}: \emph{a} explains \emph{b} and \emph{b} explains \emph{c}, but \emph{a} does not explain \emph{c} (it's too many steps removed)
+					\item Later, in the global stemma, \emph{intermediary nodes} may be needed to ensure that all readings are explained
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{``Explained'' Readings}
+		\begin{columns}
+			\begin{column}{0.4\textwidth}
+				\centering
+				\includegraphics[width=0.75\textwidth]{../graphics/transitivity-example.pdf}
+			\end{column}
+			\begin{column}{0.55\textwidth}
+				\begin{itemize}
+					\item If we instead allow \emph{a} to explain \emph{c}, but at a higher cost (more on this in the substemma slides), then we remove the need for intermediary nodes (although multiple changes in the same variation unit may be implied along an edge in the global stemma)
+				\end{itemize}
+				\begin{center}
+					\hyperlink{slide:crossroad}{(Return to start)}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{The Substemma(ta) of a Witness}\label{slide:substemma}
+		\begin{itemize}
+			\item The \emph{substemma} of a witness is the portion of the global stemma consisting of the witness and its ancestors in the stemma
+			\item Requirement: \emph{every} extant reading in the witness must be explained by a reading in at least one of its ancestors
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{../graphics/ga-2243-substemma.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Substemma(ta) of a Witness}
+		\begin{itemize}
+			\item A witness may have multiple valid substemma (i.e., ones that explain all of its readings), but some are better than others
+			\item Two of the CBGM's methodological assumptions are important here:
+			\begin{enumerate}
+				\setcounter{enumi}{2} % manually set the enumerate counter so that the first item is #3
+				\item Scribes typically used fewer sources rather than many.
+				\item Scribes typically used closely related sources rather than distant ones.
+			\end{enumerate}
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{../graphics/substemmata.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Substemma(ta) of a Witness}
+		\begin{itemize}
+			\item Based on assumption 3, we should prefer substemmata with fewer ancestors (``parsimony'')
+			\item Based on assumption 4, we should prefer substemmata with ancestors that agree as often as possible with the witness
+			\item A balancing act: the substemma \{L938\} is more parsimonious, but may not explain as many readings by agreement
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{../graphics/substemmata.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Substemma(ta) of a Witness}
+		\begin{itemize}
+			\item A simple cost function for each ancestor is ``the number of variation units where the ancestor explains the witness by descent and not agreement''
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/explained-readings-costs.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Substemma(ta) of a Witness}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item If we allow a reading to explain any reading posterior to it, then a better cost per variation unit is the length of the path from the prior reading to the posterior one.
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=0.75\textwidth]{../graphics/transitivity-cost.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Finding a (Good) Substemma}\label{slide:substemma-search}
+		\begin{itemize}
+			\item Also called \emph{substemma optimization}
+			\item For $n$ potential ancestors, a \emph{weighted set cover} problem with $n$ sets (and $2^n - 1$ combinations to check!)
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{../graphics/weighted-set-cover.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Finding a (Good) Substemma}
+		\begin{columns}
+			\begin{column}{0.4\textwidth}
+				\includegraphics[width=\textwidth]{../graphics/branch-and-bound-example.pdf}
+			\end{column}
+			\begin{column}{0.55\textwidth}
+				\begin{itemize}
+					\item If a witness has many potential ancestors, then checking all $2^n - 1$ possible substemmata by brute force is prohibitive
+					\item The \emph{branch-and-bound} heuristic (pictured left) finds all minimum-cost substemmata quickly in practice
+					\item Easily adapted to find all substemmata within a given cost
+				\end{itemize}
+				\begin{center}
+					\hyperlink{slide:crossroad}{(Return to start)}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{The Global Stemma}\label{slide:global-stemma}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item Just as the local stemma relates readings, the \emph{global stemma} relates witnesses
+					\item Combination of all substemmata into a single graph
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{../graphics/partial-global-stemma.pdf}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{The Global Stemma}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item But \emph{every reading in every local stemma} except the initial one must be explained by another reading
+					\item Otherwise…
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=0.875\textwidth]{../graphics/B25K1V13U24-26-local-stemma-incomplete.pdf}
+				\end{center}	
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/global-stemma-incomplete.pdf}
+		\end{center}	
+	\end{frame}
+	\begin{frame}{The Global Stemma}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{itemize}
+					\item If we ``complete'' every local stemma (and ignore or manually account for super fragmentary witnesses) ...
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{../graphics/B25K1V13U24-26-local-stemma-complete.pdf}
+				\end{center}	
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/global-stemma-complete.pdf}
+		\end{center}	
+	\end{frame}
+	\begin{frame}{The Global Stemma}
+		\begin{itemize}
+			\item How is this different than a textual flow diagram?
+			\begin{itemize}
+				\item A witness can have more than one ancestor
+				\item All readings in a witness must be explained by readings in its ancestor(s)
+				\item More computationally intensive, so takes a bit longer to produce
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\href{../graphics/global-stemma-complete-reoriented.pdf}{*Field trip*}
+		\end{center}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Criticisms and Idiosyncrasies}\label{slide:criticisms}
+		\begin{itemize}
+			\item Biggest idiosyncrasy: \emph{no reconstruction of hypothetical ancestors} (because contamination is assumed to make this impossible)
+			\begin{itemize}
+				\item (Personal opinion: this assumption is made for practical rather than theoretical reasons)
+				\item Texts of extant witnesses = bad representatives of ancestors of other extant texts
+				\item CBGM may see ``contamination'' where there's just a gap in the textual tradition
+				\item Enough of the tradition is lost to make this a problem
+			\end{itemize}
+			\item Can the global stemma be understood as a history of the text?
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Criticisms and Idiosyncrasies}
+		\begin{itemize}
+			\item Recommended reading:
+			\begin{itemize}
+				\item \cite{Jongkind14}
+				\item The special feature articles in \emph{TC} 20 (2015)
+				\item \cite{Gurry18}
+				\item \cite{Carlson20} (but see \href{http://ntvmr.uni-muenster.de/en_US/intfblog/-/blogs/remarks-on-carlson-a-bias-at-the-heart-of-the-cbgm-guest-post-by-gerd-mink-}{Mink's response})
+			\end{itemize}
+		\end{itemize}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Making It Digital}\label{slide:making-it-digital}
+		\begin{columns}
+			\begin{column}{0.55\textwidth}
+				\begin{center}
+					Collation
+				\end{center}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\includegraphics[width=\textwidth]{../graphics/collation-xml.png}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Making It Digital}
+		\begin{columns}
+			\begin{column}{0.55\textwidth}
+				\begin{center}
+					Local stemma
+				\end{center}
+				\includegraphics[width=\textwidth]{../graphics/B25K1V4U22-26-local-stemma-no-legend.pdf}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\includegraphics[scale=0.6667]{../graphics/local-stemma-xml.png}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Making It Digital}
+		\begin{center}
+			Genealogical relationships
+		\end{center}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{align*}
+					\mathtt{agree} &= [1,0,0,0,0]\\
+					\mathtt{prior} &= [0,1,0,0,0]\\
+					\mathtt{posterior} &= [0,0,1,0,0]\\
+					\phantom{*}
+				\end{align*}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{align*}
+					\mathtt{norel} &= [0,0,0,1,0]\\
+					\mathtt{uncl} &= [0,0,0,0,1]\\
+					\mathtt{expl} &= [1,0,1,0,0]\\
+					\mathtt{cost} &= 1
+				\end{align*}
+			\end{column}
+		\end{columns}
+		\begin{center}
+			\includegraphics[width=\textwidth]{../graphics/genealogical-relationships.pdf}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Making It Digital}
+		\begin{itemize}
+			\item The \texttt{open-cbgm} library (my implementation of the CBGM, based on these principles) is freely available at \url{https://github.com/jjmccollum/open-cbgm}, and the standalone command-line utility is available at \url{https://github.com/jjmccollum/open-cbgm-standalone}
+			\begin{itemize}
+				\item Supported on Windows, Mac, and Linux
+			\end{itemize}
+			\item The INTF's official implementation (using a Docker container) is now also available (download and instructions at \url{http://ntvmr.uni-muenster.de/intfblog/-/blogs/download-the-cbgm-docker-container})
+		\end{itemize}
+		\begin{center}
+			\hyperlink{slide:crossroad}{(Return to start)}
+		\end{center}
+	\end{frame}
+	\begin{frame}[allowframebreaks]
+		\printbibliography
+	\end{frame}
+\end{document}

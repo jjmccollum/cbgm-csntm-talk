@@ -1,0 +1,18 @@
+digraph partial_global_stemma {
+	margin=0;
+	ga_025[shape="ellipse", label="025"];
+	ga_104[shape="ellipse", label="104"];
+	ga_876[shape="ellipse", label="876"];
+	ga_1448[shape="ellipse", label="1448"];
+	ga_1832[shape="ellipse", label="1832"];
+	ga_2243[shape="ellipse", label="2243"];
+	ga_2492[shape="ellipse", label="2492"];
+	ga_L938[shape="ellipse", label="L938"];
+	ga_025 -> ga_104[color="Red"];
+	ga_104 -> ga_2243[color="Blue"];
+	ga_876 -> ga_1832[color="ForestGreen"];
+	ga_1448 -> ga_876[color="LightSeaGreen"];
+	ga_1832 -> ga_2243[color="Blue"];
+	ga_2492 -> ga_876[color="LightSeaGreen"];
+	ga_L938 -> ga_025[color="Purple"];
+}
