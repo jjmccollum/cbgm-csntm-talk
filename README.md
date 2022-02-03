@@ -13,3 +13,9 @@ This work is licensed under a
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+This is the accompanying slide deck for a Q&amp;A with staff at the [Center for the Study of New Testament Manuscripts](https://www.csntm.org/) (CSNTM) on 31 January 2022.
+
+## Citing This Resource
+
+This resource can be cited with the DOI [10.17613/9qmw-4z73](https://doi.org/10.17613/9qmw-4z73).
